@@ -32,7 +32,7 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <div className="relative h-[530px] w-full overflow-hidden rounded-xl mt-4">
+    <div className="relative h-[550px] w-full overflow-hidden rounded-xl mt-4">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -43,7 +43,7 @@ const Carousel = ({ slides }) => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="absolute w-full h-full object-contain"
+            className="absolute w-full h-[600px] object-cover"
           />
           {/* Overlay texte */}
           <div className="absolute inset-0 bg-white bg-opacity-10 flex flex-col justify-start items-center text-black">
