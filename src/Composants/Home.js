@@ -5,15 +5,15 @@ import Carousel from './Carousel.js';
 const Home = () => {
   const slides = [
     {
-      image: process.env.PUBLIC_URL + '/images/taib.webp',
+      image: process.env.REACT_APP_PUBLIC_URL + '/images/taib.webp',
       alt: "Taib massages, réflexologie, pierres chaudes"
     },
     {
-      image: process.env.PUBLIC_URL + '/images/Table.webp',
+      image: process.env.REACT_APP_PUBLIC_URL + '/images/Table.webp',
       alt: "Table de massage"
     },
     {
-      image: process.env.PUBLIC_URL + '/images/Produits.webp',
+      image: process.env.REACT_APP_PUBLIC_URL + '/images/Produits.webp',
       alt: "Sélection de produit bien-être premium lors de vos massages"
     }
   ];

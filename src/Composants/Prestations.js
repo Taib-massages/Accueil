@@ -7,7 +7,7 @@ const Prestations = () => {
       {/* Section bannière */}
       <div className="relative h-[500px] w-full">
         <img 
-          src={`${process.env.PUBLIC_URL}/images/presta-banner.webp`}
+          src={`${process.env.REACT_APP_PUBLIC_URL}/images/presta-banner.webp`}
           alt="Mes prestations"
           className="w-full h-full object-cover"
         />
@@ -58,7 +58,7 @@ const Prestations = () => {
           {/* Section image */}
           <div>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/massage.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/massage.webp`}
               alt="Séance de massage"
               className="w-full rounded-lg shadow-md"
             />
@@ -80,7 +80,7 @@ const Prestations = () => {
         {/* Section image */}
         <div>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/Reflexologie.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/Reflexologie.webp`}
               alt="Séance de massage"
               className="w-full rounded-lg shadow-md"
             />
@@ -167,7 +167,7 @@ const Prestations = () => {
           {/* Section image */}
           <div>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/soins.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/soins.webp`}
               alt="Séance de massage"
               className="w-full rounded-lg shadow-md"
             />
@@ -188,7 +188,7 @@ const Prestations = () => {
         {/* Section image */}
         <div>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/Pierres-chaudes.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pierres-chaudes.webp`}
               alt="Séance de massage"
               className="w-full rounded-lg shadow-md"
             />
@@ -275,7 +275,7 @@ const Prestations = () => {
           {/* Section image */}
           <div>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/ventouse.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/ventouse.webp`}
               alt="Séance de massage"
               className="w-full rounded-lg shadow-md"
             />

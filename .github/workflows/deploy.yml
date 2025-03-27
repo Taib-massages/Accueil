@@ -37,10 +37,12 @@ jobs:
         env:
           REACT_APP_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
           CI: false
-          PUBLIC_URL: /taib-massages/
+          REACT_APP_PUBLIC_URL: https://damien-cuvillier.github.io/Taib-massages/
         run: |
-          echo "Building with PUBLIC_URL: $PUBLIC_URL"
+          echo "Building with REACT_APP_PUBLIC_URL: $REACT_APP_PUBLIC_URL"
           npm run build
+          echo "Copying index.html to root"
+          cp build/index.html build/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -52,6 +54,7 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy to GitHub Pages'
+         
 
       - name: Deploy to GitHub Pages (Alternative)
         if: github.ref == 'refs/heads/main'

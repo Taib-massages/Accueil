@@ -22,7 +22,7 @@ function Header() {
                     {/* Logo sans soulignage */}
                     <Link to="/" className="relative">
                         <img 
-                            src={`${process.env.PUBLIC_URL}/images/Logo.webp`} 
+                            src={`${process.env.REACT_APP_PUBLIC_URL}/images/Logo.webp`} 
                             alt="Organiquement Votre Sorigny" 
                             className="h-12 w-12 rounded-full object-cover hover:opacity-80 transition-opacity"
                         />
@@ -60,7 +60,7 @@ function Header() {
                     {/* Logo en version mobile */}
                     <Link to="/">
                         <img 
-                            src={`${process.env.PUBLIC_URL}/images/Logo.webp`}  
+                            src={`${process.env.REACT_APP_PUBLIC_URL}/images/Logo.webp`}  
                             alt="Organiquement Votre Sorigny" 
                             className="h-10 w-10 rounded-full object-cover"
                         />
