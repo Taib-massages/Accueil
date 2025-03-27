@@ -10,7 +10,7 @@ const Home = () => {
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/taib.webp`}
           alt="Cours de Pilates"
-          className="w-full h-full object-cover sm:object-cover transform sm:transform-none translate-y-[30px] lg:translate-y-[20px]"
+          className="w-full h-full object-cover sm:object-cover transform sm:transform-none translate-y-[20px] lg:translate-y-[20px]"
         />
       </div>
       
