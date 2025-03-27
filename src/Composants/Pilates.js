@@ -7,7 +7,7 @@ const Pilates = () => {
       {/* Section image en haut */}
       <div className="relative h-[500px] w-full">
         <img 
-          src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pilatesheader.webp`}
+          src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pilates-header.webp`}
           alt="Cours de Pilates"
           className="w-full h-full object-cover"
         />
@@ -47,7 +47,7 @@ const Pilates = () => {
           {/* Section image */}
           <div>
             <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/pilates.webp`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pilates.webp`}
               alt="Exercice de Pilates"
               className="w-full shadow-md"
             />
