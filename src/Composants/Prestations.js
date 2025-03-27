@@ -53,7 +53,12 @@ const Prestations = () => {
                   Table de massage non fournie
                 </p>
               </div>
-              
+              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
+                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 80€</span>
+                </div>
+              </div>
             </div>
           </div>
           {/* Section image */}
@@ -117,6 +122,12 @@ const Prestations = () => {
                   Améliore la qualité du sommeil
                 </p>
               </div>
+              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
+                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 60€</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -162,6 +173,12 @@ const Prestations = () => {
                 <p className="text-gray-600">
                 Soulage les tensions du dos et beaucoup d'autres douleurs
                 </p>
+              </div>
+              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h15</span>
+                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 110€</span>
+                </div>
               </div>
             </div>
           </div>
@@ -225,6 +242,12 @@ const Prestations = () => {
                 Génère une sensation de bien-être qui se prolonge longtemps après la séance
                 </p>
               </div>
+              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h15</span>
+                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 120€</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -270,6 +293,12 @@ const Prestations = () => {
                 <p className="text-gray-600">
                 Soulage les maux de dos et migraines.
                 </p>
+              </div>
+              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
+                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 50€</span>
+                </div>
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@ export function FooterComponent() {
           </div>
 
           {/* Troisième colonne - Liens */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 text-gray-600">
             <div>
               <Footer.Title title="Mes Prestations" />
               <Footer.LinkGroup col>

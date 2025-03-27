@@ -1,17 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SEO from './components/SEO';
+
 
 const Home = () => {
   
   return (
-    <>
-      <SEO
-        title="Taib-massages - Spécialiste de bien-être"
-        description="Masseur de bien-être spécialisé en massages et cours de Pilates à Paris 18e. Réservez votre séance en ligne."
-        keywords="massage, pilates, bien-être, Paris 18e"
-        image={`${process.env.REACT_APP_PUBLIC_URL}/images/og-image.jpg`}
-      />
     <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-8">
       <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[550px] ">
         <img 
@@ -79,7 +72,6 @@ const Home = () => {
         </div>
       </section>
     </div>
-    </>
   );
 };
 
