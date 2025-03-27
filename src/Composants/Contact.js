@@ -1,10 +1,15 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { useLocation } from 'react-router-dom';
 
 const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
 
 const Contact = ({ showOnlyForm = false }) => {
+    const location = useLocation();
+    const prestation = location.state?.prestation || '';
+    const cadeau = location.state?.cadeau || '';
+
     const validationSchema = Yup.object({
         name: Yup.string()
             .required('Veuillez remplir le champ')
@@ -43,12 +48,15 @@ const Contact = ({ showOnlyForm = false }) => {
                     cadeau: values.cadeau,
                     prestation: values.prestation,
                     message: values.message,
-                    subject: 'Voilà un nouveau client'
+                    subject: 'Voilà un nouveau client',
+                    from_name: values.name,
+                    reply_to: values.email
                 }),
             });
     
             if (!response.ok) {
-                throw new Error('La requête a échoué');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'La requête a échoué');
             }
     
             const data = await response.json();
@@ -58,7 +66,7 @@ const Contact = ({ showOnlyForm = false }) => {
                 alert('Message envoyé avec succès !');
                 resetForm();
             } else {
-                alert(`Erreur: ${data.message || 'Une erreur est survenue'}`);
+                throw new Error(data.message || 'Une erreur est survenue');
             }
         } catch (error) {
             console.error('Erreur détaillée:', error);
@@ -81,15 +89,21 @@ const Contact = ({ showOnlyForm = false }) => {
 
                 <div className={`contact-form-section ${showOnlyForm ? '' : 'min-h-screen'} mt-8 sm:mt-8`}>
                     <Formik
-                        initialValues={{ name: '', email: '', message: '', cadeau: '', prestation: '' }}
+                        initialValues={{ 
+                            name: '', 
+                            email: '', 
+                            message: '',
+                            prestation: prestation,
+                            cadeau: cadeau
+                        }}
                         validationSchema={validationSchema}
                         onSubmit={handleSubmit}
                     >
                         {({ isSubmitting }) => (
-                            <div className={`${showOnlyForm ? '' : 'min-h-screen'} flex items-center justify-center px-4 py-6 sm:py-8`}>
+                            <div className={`${showOnlyForm ? '' : 'min-h-screen'} flex items-center justify-center px-4 sm:px-8`}>
                                 <div className="Form w-full max-w-2xl bg-white/50 rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-8 mx-auto">
                                     <div className="text-center mb-6 sm:mb-8">
-                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-[#5d795d] mb-3 sm:mb-4'>
+                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-[#80a880] mb-3 sm:mb-4'>
                                             Contactez moi !
                                         </h2>
                                         <p className='text-sm sm:text-base lg:text-lg text-gray-800 max-w-md mx-auto px-2'>
@@ -103,7 +117,7 @@ const Contact = ({ showOnlyForm = false }) => {
                                         <InputField name="email" type="email" placeholder="votre@email.com" />
                                         <InputField name="cadeau" type="text" placeholder="Est-ce un cadeau à offrir ?" />
                                         <InputField name="prestation" type="text" placeholder="Choix de la prestation" />
-                                        <TextAreaField name="message" placeholder="Informations complémentaires, numéro de téléphone, disponibilité..." />
+                                        <TextAreaField name="message" placeholder="Votre message..." />
 
                                         <button
                                             type="submit"
@@ -111,8 +125,8 @@ const Contact = ({ showOnlyForm = false }) => {
                                             className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-base sm:text-lg 
                                                       font-bold text-white transition duration-150 ease-in-out
                                                       ${isSubmitting 
-                                                        ? 'bg-[#5d795d] cursor-not-allowed' 
-                                                        : 'bg-[#5d795d] hover:bg-[#7da37d] active:bg-[#7da37d] hover:shadow-lg'
+                                                        ? 'bg-[#80a880] cursor-not-allowed' 
+                                                        : 'bg-[#80a880] hover:bg-green-800 active:bg-green-800 hover:shadow-lg'
                                                       }`}
                                         >
                                             {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}

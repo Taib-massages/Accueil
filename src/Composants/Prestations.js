@@ -2,6 +2,69 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Prestations = () => {
+  const prestations = [
+    {
+      title: "Massage de corps tête au pieds",
+      description: "Découvrez ma prestation de massage professionnelles, adaptées à vos besoins et vos envies. Chaque séance est personnalisée pour vous offrir le meilleur moment de détente possible.",
+      price: "80€",
+      duration: "1h",
+      image: "/images/massage.webp",
+      benefits: [
+        "Massages sur mesure adaptés à vos besoins",
+        "Utilisation d'huiles essentielles de qualité",
+        "Table de massage non fournie"
+      ]
+    },
+    {
+      title: "Réflexologie",
+      description: "Découvrez ma prestation de massage réflexologue, discipline thérapeutique qui consiste à masser des \"points réflexes\" situés sur différentes parties du corps.",
+      price: "60€",
+      duration: "1h",
+      image: "/images/Reflexologie.webp",
+      benefits: [
+        "Diminue le stress et l'anxiété",
+        "Favorise la détente",
+        "Améliore la qualité du sommeil"
+      ]
+    },
+    {
+      title: "Soins du visage et réflexologie plantaire",
+      description: "Préservez et embelissez votre visage, suivit d'un massage plantaire pour libérer le stress et dynamiser l'organisme",
+      price: "110€",
+      duration: "1h15",
+      image: "/images/soins.webp",
+      benefits: [
+        "Stimule la circulation sanguine et favorise la régénération cellulaire",
+        "Utilisation de produits naturels de qualités",
+        "Soulage les tensions du dos et beaucoup d'autres douleurs"
+      ]
+    },
+    {
+      title: "Massage aux Pierres Chaudes",
+      description: "Découvrez un massage pour libérer les tensions et purifier le corps, relaxer les muscles en profondeur et favoriser l'oxygénation des tissus",
+      price: "120€",
+      duration: "1h15",
+      image: "/images/Pierres-chaudes.webp",
+      benefits: [
+        "Favorise l'oxygénation des tissus",
+        "Lutte contre le stress et la fatigue",
+        "Génère une sensation de bien-être qui se prolonge longtemps après la séance"
+      ]
+    },
+    {
+      title: "Ventouses",
+      description: "Découvrez le massage professionnelles à l'aide de ventouses, bénéfique pour la santé globale et qui traite efficacement les affections localisées et systémiques",
+      price: "50€",
+      duration: "1h",
+      image: "/images/ventouse.webp",
+      benefits: [
+        "Circulation sanguine et/ou retour veineux paresseux",
+        "Soigne la cellulite et la peau d'orange",
+        "Soulage les maux de dos et migraines."
+      ]
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-100">
       {/* Section bannière */}
@@ -18,309 +81,52 @@ const Prestations = () => {
         </div>
       </div>
 
-      {/* Section principale */}
-      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Section texte */}
-          <div>
-            <h2 className="text-3xl font-bold text-[#5d795d] mb-4">Massage de corps tête au pieds</h2>
-            <p className="text-gray-600 mb-4">
-              Découvrez ma prestation de massage professionnelles, adaptées à vos besoins et vos envies.
-              Chaque séance est personnalisée pour vous offrir le meilleur moment de détente possible.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Massages sur mesure adaptés à vos besoins
-                </p>
+      {/* Sections des prestations */}
+      {prestations.map((prestation, index) => (
+        <div key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Section texte */}
+            <div className={`flex flex-col justify-center ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+              <h2 className="text-3xl font-bold text-[#5d795d] mb-4">{prestation.title}</h2>
+              <p className="text-gray-600 mb-4">{prestation.description}</p>
+              <div className="space-y-4">
+                {prestation.benefits.map((benefit, benefitIndex) => (
+                  <div key={benefitIndex} className="flex items-start">
+                    <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p className="text-gray-600">{benefit}</p>
+                  </div>
+                ))}
               </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Utilisation d'huiles essentielles de qualité
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Table de massage non fournie
-                </p>
-              </div>
-              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
-                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 80€</span>
-                </div>
-              </div>
+              {/* Section tarif */}
+          <div className="mt-6 p-4 bg-[#f6e6d1] rounded-lg">
+            <div className="flex justify-between items-center">
+              <span className="text-xl font-semibold text-[#5d795d]">Durée : {prestation.duration}</span>
+              <span className="text-xl font-semibold text-[#5d795d]">Prix : {prestation.price}</span>
             </div>
           </div>
-          {/* Section image */}
-          <div>
-            <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/massage.webp`}
-              alt="Séance de massage"
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-        {/* Section bouton */}
-      <div className="bg-[#f6e6d1] max-w-7xl mx-auto rounded-lg mt-2 px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Réservez maintenant</span>
-        </Link>
-      </div>
-      </div>
-      {/*deuxième section presta*/}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Section image */}
-        <div>
-            <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/Reflexologie.webp`}
-              alt="Séance de massage"
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-          {/* Section texte */}
-          <div>
-            <h2 className="text-[#5d795d] text-3xl font-bold mb-4">Réflexologie</h2>
-            <p className="text-gray-600 mb-4">
-              Découvrez ma prestation de massage réflexologue, discipline thérapeutique qui consiste à masser des “points réflexes” situés sur différentes parties du corps.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Diminue le stress et l'anxiété
-                </p>
+              <div className="mt-6 text-center">
+                <Link 
+                  to="/contact" 
+                  state={{ prestation: prestation.title }}
+                  className="inline-flex items-center justify-center px-6 w-full py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
+                >
+                  Réservez maintenant
+                </Link>
               </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Favorise la détente
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Améliore la qualité du sommeil
-                </p>
-              </div>
-              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
-                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 60€</span>
-                </div>
-              </div>
+            </div>
+            {/* Section image */}
+            <div className={`relative aspect-[4/3] md:aspect-[3/2] ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+              <img 
+                src={`${process.env.REACT_APP_PUBLIC_URL}${prestation.image}`}
+                alt={prestation.title}
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
-        <div className="bg-[#f6e6d1] max-w-7xl mx-auto rounded-lg mt-2 px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Réservez maintenant</span>
-        </Link>
-      </div>
-      </div>
-      {/* 3e Section presta*/}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Section texte */}
-          <div>
-            <h2 className="text-3xl font-bold text-[#5d795d] mb-4">Soins du visage et réflexologie plantaire</h2>
-            <p className="text-gray-600 mb-4">
-              Préservez et embelissez votre visage, suivit d'un massage plantaire pour libérer le stress et dynamiser l'organisme
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Stimule la circulation sanguine et favorise la régénération cellulaire
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Utilisation de produits naturels de qualités
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Soulage les tensions du dos et beaucoup d'autres douleurs
-                </p>
-              </div>
-              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h15</span>
-                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 110€</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Section image */}
-          <div>
-            <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/soins.webp`}
-              alt="Séance de massage"
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-        <div className="bg-[#f6e6d1] max-w-7xl mx-auto rounded-lg mt-2 px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Réservez maintenant</span>
-        </Link>
-      </div>
-      </div>
-      {/*4e section presta*/}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Section image */}
-        <div>
-            <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pierres-chaudes.webp`}
-              alt="Séance de massage"
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-          {/* Section texte */}
-          <div>
-            <h2 className="text-3xl font-bold text-[#5d795d] mb-4">Massage aux Pierres Chaudes</h2>
-            <p className="text-gray-600 mb-4">
-              Découvrez un massage pour libérer les tensions et purifier le corps, relaxer les muscles en profondeur et favoriser l'oxygénation des tissus.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Favorise l'oxygénation des tissus
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Lutte contre le stress et la fatigue
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Génère une sensation de bien-être qui se prolonge longtemps après la séance
-                </p>
-              </div>
-              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h15</span>
-                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 120€</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#f6e6d1] max-w-7xl mx-auto rounded-lg mt-2 px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Réservez maintenant</span>
-        </Link>
-      </div>
-      </div>
-      {/* 5e Section presta*/}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Section texte */}
-          <div>
-            <h2 className="text-3xl font-bold text-[#5d795d] mb-4">Ventouses</h2>
-            <p className="text-gray-600 mb-4">
-              Découvrez le massage professionnelles à l'aide de ventouses, bénéfique pour la santé globale et qui traite efficacement les affections localisées et systémiques
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Circulation sanguine et/ou retour veineux paresseux
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Soigne la cellulite et la peau d'orange
-                </p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">
-                Soulage les maux de dos et migraines.
-                </p>
-              </div>
-              <div className="mt-6 p-4 bg-neutral-100 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-[#5d795d]">Durée : 1h</span>
-                  <span className="text-xl font-semibold text-[#5d795d]">Prix : 50€</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Section image */}
-          <div>
-            <img 
-              src={`${process.env.REACT_APP_PUBLIC_URL}/images/ventouse.webp`}
-              alt="Séance de massage"
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-        <div className="bg-[#f6e6d1] max-w-7xl mx-auto rounded-lg mt-2 px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Réservez maintenant</span>
-        </Link>
-      </div>
-      </div>
-      
+      ))}
     </div>
   );
 };

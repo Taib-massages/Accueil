@@ -50,6 +50,19 @@ const Pilates = () => {
         </div>
       </div>
 
+      {/* Section bouton de réservation */}
+      <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center">
+          <Link 
+            to="/contact"
+            state={{ prestation: "Cours de Pilates" }}
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
+          >
+            Réservez maintenant
+          </Link>
+        </div>
+      </div>
+
       {/* Section icônes */}
       <div className="bg-neutral-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

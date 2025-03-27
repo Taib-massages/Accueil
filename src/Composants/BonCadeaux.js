@@ -75,6 +75,10 @@ const BonCadeaux = () => {
             <div className="mt-6 text-center">
               <Link 
                 to="/contact"
+                state={{ 
+                  prestation: massage.title,
+                  cadeau: "C'est un cadeau" 
+                }}
                 className="inline-block bg-[#5d795d] text-white px-6 py-2 rounded-md hover:bg-[#7da37d] transition-colors"
               >
                 Commander
