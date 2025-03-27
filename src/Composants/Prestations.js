@@ -53,6 +53,7 @@ const Prestations = () => {
                   Table de massage non fournie
                 </p>
               </div>
+              
             </div>
           </div>
           {/* Section image */}

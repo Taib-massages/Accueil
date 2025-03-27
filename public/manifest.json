@@ -1,6 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Taib-massages",
+  "short_name": "Taib-massages",
+  "description": "Centre de bien-être spécialisé en massages et cours de Pilates à Saint-Étienne",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6e6d1",
+  "theme_color": "#5d795d",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +22,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
