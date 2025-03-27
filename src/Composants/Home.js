@@ -1,26 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from './Carousel.js';
+
 
 const Home = () => {
-  const slides = [
-    {
-      image: process.env.REACT_APP_PUBLIC_URL + '/images/taib.webp',
-      alt: "Taib massages, réflexologie, pierres chaudes"
-    },
-    {
-      image: process.env.REACT_APP_PUBLIC_URL + '/images/Table.webp',
-      alt: "Table de massage"
-    },
-    {
-      image: process.env.REACT_APP_PUBLIC_URL + '/images/Produits.webp',
-      alt: "Sélection de produit bien-être premium lors de vos massages"
-    }
-  ];
-
+  
   return (
     <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-8">
-      <Carousel slides={slides} />
+      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[550px] ">
+        <img 
+          src={`${process.env.REACT_APP_PUBLIC_URL}/images/taib.webp`}
+          alt="Cours de Pilates"
+          className="w-full h-full object-cover sm:object-cover transform sm:transform-none translate-y-[30px] lg:translate-y-[20px]"
+        />
+      </div>
       
       <section className="max-w-7xl mx-auto mt-8">
         <h1 className="text-3xl font-bold text-[#5d795d] text-center mb-2">
@@ -70,7 +62,7 @@ const Home = () => {
             <div className="bg-[#f6e6d1] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-4 text-[#5d795d]">Contact</h3>
               <p className="text-gray-600">
-              Un renseignement, une envie ou une question ou vous savez déjà ce que vous voulez ?
+              Un renseignement, une envie, une question ou vous savez déjà ce que vous voulez ?
               </p>
               <span className="inline-block mt-4 text-[#5d795d] font-bold hover:text-green-900">
                 Contactez moi pour prendre un rendez vous →

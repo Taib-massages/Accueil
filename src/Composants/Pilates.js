@@ -5,21 +5,16 @@ const Pilates = () => {
   return (
     <div className="min-h-screen bg-neutral-100">
       {/* Section image en haut */}
-      <div className="relative h-[500px] w-full">
+      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[500px] ">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pilates-header.webp`}
           alt="Cours de Pilates"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain sm:object-cover transform sm:transform-none translate-y-[30px] sm:translate-y-0"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white text-center relative top-40">
-            Cours de Pilates
-          </h1>
-        </div>
       </div>
 
       {/* Section texte */}
-      <div className=" bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="bg-neutral-100 mx-auto mt-4 px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         <div className="text-center">
           <p className="text-xl text-gray-700 mb-4">
             Découvrez nos cours de Pilates pour améliorer votre posture et votre bien-être. <br></br>Suivit d'un massage pour se détendre ! 
