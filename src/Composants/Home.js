@@ -6,7 +6,7 @@ const Home = () => {
   
   return (
     <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-8">
-      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[550px] ">
+      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[600px] ">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/taib.webp`}
           alt="Cours de Pilates"

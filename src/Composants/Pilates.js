@@ -5,7 +5,7 @@ const Pilates = () => {
   return (
     <div className="min-h-screen bg-neutral-100">
       {/* Section image en haut */}
-      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[500px] ">
+      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[600px] ">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/Pilates-header.webp`}
           alt="Cours de Pilates"

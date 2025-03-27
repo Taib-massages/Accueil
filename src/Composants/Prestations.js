@@ -68,7 +68,7 @@ const Prestations = () => {
   return (
     <div className="min-h-screen bg-neutral-100">
       {/* Section bannière */}
-      <div className="relative h-[500px] w-full">
+      <div className="relative h-[600px] w-full">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/presta-banner.webp`}
           alt="Mes prestations"
