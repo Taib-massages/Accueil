@@ -19,10 +19,10 @@ const BonCadeaux = () => {
     },
     {
       id: 3,
-      title: "Soins du visage et réflexologie plantaire",
-      duration: "1h15",
-      price: 110,
-      description: "Préservez et embelissez votre visage, suivit d'un massage plantaire pour libérer le stress et dynamiser l'organisme"
+      title: "Soins du visage",
+      duration: "30",
+      price: 30,
+      description: "Préservez et embelissez votre visage, option disponible en complément de tous les massages"
     },
     {
         id: 4,

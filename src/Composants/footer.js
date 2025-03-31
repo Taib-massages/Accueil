@@ -1,5 +1,5 @@
 import { Footer } from "flowbite-react";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -46,7 +46,7 @@ export function FooterComponent() {
             <div>
               <Footer.Title title="Mes Prestations" />
               <Footer.LinkGroup col>
-                <Footer.Link as={Link} to="/CBD">Prestations et prix</Footer.Link>
+                <Footer.Link as={Link} to="/prestations">Prestations et prix</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -77,11 +77,6 @@ export function FooterComponent() {
             year={2025}
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon 
-              href="https://www.facebook.com/taib.eaid" 
-              icon={BsFacebook}
-              target="_blank"
-            />
             <Footer.Icon 
               href="https://www.instagram.com/taib_massages/" 
               icon={BsInstagram}

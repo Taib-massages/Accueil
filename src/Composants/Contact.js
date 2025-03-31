@@ -103,7 +103,7 @@ const Contact = ({ showOnlyForm = false }) => {
                             <div className={`${showOnlyForm ? '' : 'min-h-screen'} flex items-center justify-center px-4 sm:px-8`}>
                                 <div className="Form w-full max-w-2xl bg-white/50 rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-8 mx-auto">
                                     <div className="text-center mb-6 sm:mb-8">
-                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-[#80a880] mb-3 sm:mb-4'>
+                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-[#5d795d] mb-3 sm:mb-4'>
                                             Contactez moi !
                                         </h2>
                                         <p className='text-sm sm:text-base lg:text-lg text-gray-800 max-w-md mx-auto px-2'>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Import des icônes
+import { FaInstagram } from 'react-icons/fa'; // Import des icônes
 
 function Header() {
     const location = useLocation();
@@ -9,8 +9,8 @@ function Header() {
     const menuItems = [
         { path: '/', label: 'Accueil' },
         { path: '/prestations', label: 'Prestations' },
-        { path: '/pilates', label: 'Pilates' },
-        { path: '/cadeaux', label: 'Bon cadeaux' },
+        { path: '/pilates', label: 'Pilates Mat' },
+        { path: '/cadeaux', label: 'Bons cadeaux' },
         { path: '/contact', label: 'Contact' },
     ];
 
@@ -23,7 +23,7 @@ function Header() {
                     <Link to="/" className="relative">
                         <img 
                             src={`${process.env.REACT_APP_PUBLIC_URL}/images/Logo.webp`} 
-                            alt="Organiquement Votre Sorigny" 
+                            alt="Taib-massages" 
                             className="h-12 w-12 rounded-full object-cover hover:opacity-80 transition-opacity"
                         />
                     </Link>
@@ -44,9 +44,6 @@ function Header() {
 
                     {/* Icônes des réseaux sociaux */}
                     <div className="flex space-x-4">
-                        <a href="https://www.facebook.com/taib.eaid" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
-                            <FaFacebook size={24} />
-                        </a>
                         <a href="https://www.instagram.com/taib_massages/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
                             <FaInstagram size={24} />
                         </a>
@@ -61,15 +58,12 @@ function Header() {
                     <Link to="/">
                         <img 
                             src={`${process.env.REACT_APP_PUBLIC_URL}/images/Logo.webp`}  
-                            alt="Organiquement Votre Sorigny" 
+                            alt="Taib-massages" 
                             className="h-10 w-10 rounded-full object-cover"
                         />
                     </Link>
                     <div className="flex space-x-4">
-                        <a href="https://www.facebook.com/organiquementvotre.sorigny" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
-                            <FaFacebook size={24} />
-                        </a>
-                        <a href="https://www.instagram.com/explore/locations/101489428970039/organiquement-votre-sorigny/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
+                        <a href="https://www.instagram.com/taib_massages/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
                             <FaInstagram size={24} />
                         </a>
                     </div>

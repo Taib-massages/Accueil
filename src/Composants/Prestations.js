@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Prestations = () => {
   const prestations = [
     {
-      title: "Massage de corps tête au pieds",
-      description: "Découvrez ma prestation de massage professionnelles, adaptées à vos besoins et vos envies. Chaque séance est personnalisée pour vous offrir le meilleur moment de détente possible.",
+      title: "Massage de corps tête aux pieds",
+      description: "Découvrez ma prestation de massage professionnel, adaptées à vos besoins et vos envies. Chaque séance est personnalisée pour vous offrir le meilleur moment de détente possible.",
       price: "80€",
       duration: "1h",
-      image: "/images/massage.webp",
+      image: "/images/taib-massage.webp",
       benefits: [
         "Massages sur mesure adaptés à vos besoins",
         "Utilisation d'huiles essentielles de qualité",
@@ -28,10 +28,10 @@ const Prestations = () => {
       ]
     },
     {
-      title: "Soins du visage et réflexologie plantaire",
-      description: "Préservez et embelissez votre visage, suivit d'un massage plantaire pour libérer le stress et dynamiser l'organisme",
-      price: "110€",
-      duration: "1h15",
+      title: "Soins du visage",
+      description: "Préservez et embelissez votre visage, option possible en complément de chaque massage",
+      price: "30€",
+      duration: "30min",
       image: "/images/soins.webp",
       benefits: [
         "Stimule la circulation sanguine et favorise la régénération cellulaire",
@@ -52,8 +52,8 @@ const Prestations = () => {
       ]
     },
     {
-      title: "Ventouses",
-      description: "Découvrez le massage professionnelles à l'aide de ventouses, bénéfique pour la santé globale et qui traite efficacement les affections localisées et systémiques",
+      title: "Ventouses sèches",
+      description: "Découvrez le massage professionnel à l'aide de ventouses, bénéfique pour la santé globale et qui traite efficacement les affections localisées et systémiques",
       price: "50€",
       duration: "1h",
       image: "/images/ventouse.webp",
