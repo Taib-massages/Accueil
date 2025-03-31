@@ -52,18 +52,7 @@ const Pilates = () => {
         </div>
       </div>
 
-      {/* Section bouton de réservation */}
-      <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="text-center">
-          <Link 
-            to="/contact"
-            state={{ prestation: "Cours de Pilates Mat" }}
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
-          >
-            Réservez maintenant
-          </Link>
-        </div>
-      </div>
+      
 
       {/* Section icônes */}
       <div className="bg-neutral-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -107,14 +96,17 @@ const Pilates = () => {
         </div>
       </div>
 
-      {/* Section bouton */}
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <Link 
-          to="/contact"
-          className="inline-block bg-[#5d795d] text-white px-8 py-4 rounded-lg hover:bg-[#7da37d] transition-colors shadow-lg hover:shadow-xl"
-        >
-          <span className="text-xl font-bold">Inscrivez-vous</span>
-        </Link>
+     {/* Section bouton de réservation */}
+     <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center">
+          <Link 
+            to="/contact"
+            state={{ prestation: "Cours de Pilates Mat" }}
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
+          >
+            Réservez maintenant
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ function Header() {
                         <img 
                             src={`${process.env.REACT_APP_PUBLIC_URL}/images/logoheader.webp`} 
                             alt="Taib-massages" 
-                            className="h-12 w-12 rounded-full object-cover hover:opacity-80 transition-opacity"
+                            className="h-10 w-10 rounded-full object-cover hover:opacity-80 transition-opacity"
                         />
                     </Link>
 
