@@ -6,11 +6,11 @@ const Home = () => {
   
   return (
     <div className="bg-neutral-100 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-8">
-      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[600px] ">
+      <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[550px] max-w-5xl mx-auto ">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/taib.webp`}
           alt="Taib massages, masseur spécialiste"
-          className="w-full h-full object-cover sm:object-cover transform sm:transform-none translate-y-[20px] lg:translate-y-[20px]"
+          className="w-full h-full object-contain rounded-[2vw] sm:object-contain transform sm:transform-none translate-y-[10px] lg:translate-y-[15px]"
         />
       </div>
       
