@@ -20,9 +20,9 @@ const BonCadeaux = () => {
     {
       id: 3,
       title: "Soins du visage",
-      duration: "30",
+      duration: "30 min",
       price: 30,
-      description: "Préservez et embelissez votre visage, option disponible en complément de tous les massages"
+      description: "Préservez et embelissez votre visage, option disponible seule ou en complément de tous les massages"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const BonCadeaux = () => {
     },
     {
         id: 5,
-        title: "Ventouses",
+        title: "Ventouses sèches",
         duration: "1h",
         price: 50,
         description: "Un massage pour améliorer votre circulation sanguine et soulager vos problèmes de dos"

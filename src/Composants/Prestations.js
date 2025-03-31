@@ -29,7 +29,7 @@ const Prestations = () => {
     },
     {
       title: "Soins du visage",
-      description: "Préservez et embelissez votre visage, option possible en complément de chaque massage",
+      description: "Préservez et embelissez votre visage, option possible seule ou en complément de chaque massage",
       price: "30€",
       duration: "30min",
       image: "/images/soins.webp",

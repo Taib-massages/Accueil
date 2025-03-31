@@ -22,7 +22,7 @@ const Home = () => {
           Votre spécialiste Massage, Réflexologie et Pierres Chaudes et Ventouses sèches à Paris.
           RDV à domicile ou Paris 18e.
         </h2>
-        <p className=' text-center mb-1 font-semibold text-xl'>Prestations à domicile, massage possible sur futon de massage</p>
+        <p className=' text-center mb-1 font-semibold text-xl'>Prestations à domicile, possibilité d'utiliser un futon de massage</p>
         <h3 className="text-2xl text-center mb-1 text-[#5d795d] font-bold mt-8">
           Diplômes et formations 
         </h3>
@@ -30,7 +30,7 @@ const Home = () => {
           <ul className="space-y-4 text-xl text-center">
             <li className="font-semibold">Diplôme de masseur de l'institut national paramédical et sportif des Pays-Bas Amsterdam NESPG</li>
             <li><strong className='text-[#5d795d]'>Pierres chaudes :</strong> Formation à l'institut Figari Paris France</li>
-            <li><strong className='text-[#5d795d]'>Pilates :</strong> certificat d'instructeur / Shift U Instituto Portugues de Desporto</li>
+            <li><strong className='text-[#5d795d]'>Pilates :</strong> certificat d'instructeur, Shift U Instituto Portugues de Desporto</li>
             <li><strong className='text-[#5d795d]'>Ventouses sèches : </strong>Praticien ventouses traditionnelles chinoises Ecole SHEN en médecine traditionnelle chinoise Paris France</li>
             <li className='font-semibold'>Expérience de plus de 20 ans dans plusieurs SPA de palaces parisiens (Ritz, Bristol, Prince de Galles ...)</li>
           </ul>
