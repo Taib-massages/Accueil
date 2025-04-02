@@ -4,3 +4,19 @@ Allow: /images/og-image.png/
 
 # Sitemap
 Sitemap: https://damien-cuvillier.github.io/Taib-massages/sitemap.xml
+
+# Pages à indexer
+Allow: /prestations
+Allow: /pilates
+Allow: /contact
+Allow: /cadeaux
+
+# Pages à ne pas indexer
+Disallow: /admin
+Disallow: /wp-admin
+Disallow: /wp-content
+Disallow: /wp-includes
+
+# Priorité des pages
+Host: damien-cuvillier.github.io
+Crawl-delay: 10
