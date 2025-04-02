@@ -2,7 +2,12 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useLocation } from 'react-router-dom';
-
+import SEO from './SEO/SEO';
+<SEO 
+  title="Contact - Taib-massages"
+  description="Prenez rendez-vous pour vos séances de massage ou cours de Pilates à Paris 18e"
+  image="/images/taib.webp"
+/>
 const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
 
 const Contact = ({ showOnlyForm = false }) => {

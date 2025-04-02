@@ -1,5 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from './SEO/SEO';
+
+<SEO 
+  title="Prestations - Taib-massages"
+  description="Découvrez nos prestations de massage, réflexologie et cours de Pilates à Paris 18e"
+  image="/images/presta-banner.webp"
+  canonical="https://damien-cuvillier.github.io/Taib-massages/prestations"
+/>
 
 const Prestations = () => {
   const prestations = [
@@ -66,24 +74,27 @@ const Prestations = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-100">
+    <main className="min-h-screen bg-neutral-100">
       {/* Section bannière */}
-      <div className="relative h-[600px] w-full">
+      <header className="relative h-[600px] w-full">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/presta-banner.webp`}
-          alt="Mes prestations"
+          alt="Mes prestations de massage et Pilates à Paris 18e"
           className="w-full h-full object-cover"
+          loading="lazy"
+          width="1920"
+          height="600"
         />
         <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
           <h1 className="text-4xl font-bold text-neutral-100 text-center relative top-40">
             Mes Prestations
           </h1>
         </div>
-      </div>
+      </header>
 
       {/* Sections des prestations */}
       {prestations.map((prestation, index) => (
-        <div key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <article key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Section texte */}
             <div className={`flex flex-col justify-center ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
@@ -91,43 +102,47 @@ const Prestations = () => {
               <p className="text-gray-600 mb-4">{prestation.description}</p>
               <div className="space-y-4">
                 {prestation.benefits.map((benefit, benefitIndex) => (
-                  <div key={benefitIndex} className="flex items-start">
-                    <svg className="w-6 h-6 text-[#5d795d] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p className="text-gray-600">{benefit}</p>
-                  </div>
+                  <p key={benefitIndex} className="text-gray-600">• {benefit}</p>
                 ))}
               </div>
-              {/* Section tarif */}
-          <div className="mt-6 p-4 bg-[#f6e6d1] rounded-lg">
+              <div className="mt-6 p-4 bg-[#f6e6d1] rounded-lg">
             <div className="flex justify-between items-center">
               <span className="text-xl font-semibold text-[#5d795d]">Durée : {prestation.duration}</span>
               <span className="text-xl font-semibold text-[#5d795d]">Prix : {prestation.price}</span>
             </div>
-          </div>
-              <div className="mt-6 text-center">
-                <Link 
-                  to="/contact" 
-                  state={{ prestation: prestation.title }}
-                  className="inline-flex items-center justify-center px-6 w-full py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
-                >
-                  Réservez maintenant
-                </Link>
-              </div>
             </div>
+            <div className="mt-4 text-center">
+              <Link 
+                to="/contact" 
+                state={{ prestation: prestation.title }}
+                className="inline-flex items-center justify-center px-6 w-full py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
+                title={`Réserver une séance de ${prestation.title}`}
+              >
+                Réserver maintenant
+              </Link>
+            </div>
+            </div>
+
             {/* Section image */}
-            <div className={`relative aspect-[4/3] md:aspect-[3/2] ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+            <div className={`relative ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
               <img 
                 src={`${process.env.REACT_APP_PUBLIC_URL}${prestation.image}`}
-                alt={prestation.title}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                alt={`${prestation.title} - ${prestation.description}`}
+                className="w-full rounded-lg shadow-lg"
+                loading="lazy"
+                width="600"
+                height="400"
               />
             </div>
           </div>
-        </div>
+
+          {/* Section tarif et réservation */}
+          
+        </article>
       ))}
-    </div>
+
+    
+    </main>
   );
 };
 

@@ -2,8 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://damien-cuvillier.github.io/Taib-massages/</loc>
-    <lastmod>2025-03-27</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://damien-cuvillier.github.io/Taib-massages/prestations</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://damien-cuvillier.github.io/Taib-massages/pilates</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://damien-cuvillier.github.io/Taib-massages/cadeaux</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://damien-cuvillier.github.io/Taib-massages/contact</loc>
+    <priority>0.9</priority>
   </url>
 </urlset>

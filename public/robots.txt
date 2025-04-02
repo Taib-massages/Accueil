@@ -1,6 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /
+Allow: /images/og-image.png/
 
 # Sitemap
 Sitemap: https://damien-cuvillier.github.io/Taib-massages/sitemap.xml

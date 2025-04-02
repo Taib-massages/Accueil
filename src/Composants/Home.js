@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from './SEO/SEO';
 
+<SEO 
+  title="Taib-massages - Spécialiste de bien-être"
+  description="Spécialiste de bien-être spécialisé en massages et cours de Pilates à Paris 18e."
+  image="/images/og-image.png"
+/>
 
 const Home = () => {
   
@@ -9,8 +15,9 @@ const Home = () => {
       <div className="relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[550px] max-w-5xl mx-auto ">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/taib.webp`}
-          alt="Taib massages, masseur spécialiste"
+          alt="Taib massages, masseur spécialiste à Paris 18e - Spécialisé en massages, pierres chaudes, ventouses et Pilates"
           className="w-full h-full object-contain rounded-[2vw] sm:object-contain transform sm:transform-none translate-y-[10px] lg:translate-y-[15px]"
+           loading="lazy"
         />
       </div>
       

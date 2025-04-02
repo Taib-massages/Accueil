@@ -8,6 +8,7 @@ import BonCadeaux from './Composants/BonCadeaux';
 import Prestations from './Composants/Prestations';
 import FooterComponent from './Composants/footer.js';
 import ScrollToTop from './Composants/ScrollToTop';
+import NotFound from './Composants/NotFound';
 
 function App() {
   return (
@@ -22,8 +23,7 @@ function App() {
             <Route path="/cadeaux" element={<BonCadeaux />} />
             <Route path="/pilates" element={<Pilates />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/mentions-legales" element={<MentionsLegales />} /> */}
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <FooterComponent />
