@@ -5,11 +5,6 @@ Allow: /
 # Sitemap
 Sitemap: https://damien-cuvillier.github.io/Taib-massages/sitemap.xml
 
-# Pages à ne pas indexer
-Disallow: /admin
-Disallow: /wp-admin
-Disallow: /wp-content
-Disallow: /wp-includes
 
 # Priorité des pages
 Host: damien-cuvillier.github.io
