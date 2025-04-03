@@ -1,15 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /images/og-image.png/
+Allow: /
 
 # Sitemap
 Sitemap: https://damien-cuvillier.github.io/Taib-massages/sitemap.xml
-
-# Pages à indexer
-Allow: /prestations
-Allow: /pilates
-Allow: /contact
-Allow: /cadeaux
 
 # Pages à ne pas indexer
 Disallow: /admin
