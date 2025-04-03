@@ -7,5 +7,4 @@ Sitemap: https://damien-cuvillier.github.io/Taib-massages/sitemap.xml
 
 
 # Priorité des pages
-Host: damien-cuvillier.github.io
 Crawl-delay: 10
