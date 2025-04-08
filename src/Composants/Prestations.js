@@ -6,7 +6,7 @@ import SEO from './SEO/SEO';
   title="Prestations - Taib-massages"
   description="Découvrez nos prestations de massage, réflexologie et cours de Pilates à Paris 18e"
   image="/images/presta-banner.webp"
-  canonical="https://damien-cuvillier.github.io/Taib-massages/prestations"
+  canonical="https://Taib-massages.github.io/Accueil/prestations"
 />
 
 const Prestations = () => {

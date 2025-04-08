@@ -5,7 +5,7 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- Page d'accueil -->
   <url>
-    <loc>https://damien-cuvillier.github.io/Taib-massages/</loc>
+    <loc>https://Taib-massages.github.io/Accueil/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
     <lastmod>2025-04-02</lastmod>
@@ -13,7 +13,7 @@
 
   <!-- Prestations -->
   <url>
-    <loc>https://damien-cuvillier.github.io/Taib-massages/prestations</loc>
+    <loc>https://Taib-massages.github.io/Accueil/prestations</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
     <lastmod>2025-04-02</lastmod>
@@ -21,7 +21,7 @@
 
   <!-- Pilates -->
   <url>
-    <loc>https://damien-cuvillier.github.io/Taib-massages/pilates</loc>
+    <loc>https://Taib-massages.github.io/Accueil/pilates</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
     <lastmod>2025-04-02</lastmod>
@@ -29,7 +29,7 @@
 
   <!-- Bons cadeaux -->
   <url>
-    <loc>https://damien-cuvillier.github.io/Taib-massages/cadeaux</loc>
+    <loc>https://Taib-massages.github.io/Accueil/cadeaux</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <lastmod>2025-04-02</lastmod>
@@ -37,7 +37,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://damien-cuvillier.github.io/Taib-massages/contact</loc>
+    <loc>https://Taib-massages.github.io/Accueil/contact</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
     <lastmod>2025-04-02</lastmod>

@@ -6,6 +6,7 @@ import SEO from './SEO/SEO';
   title="Taib-massages - Spécialiste de bien-être"
   description="Spécialiste de bien-être spécialisé en massages et cours de Pilates à Paris 18e."
   image="/images/og-image.png"
+  canonical="https://Taib-massages.github.io/Accueil/"
 />
 
 const Home = () => {

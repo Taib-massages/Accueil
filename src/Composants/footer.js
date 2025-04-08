@@ -14,8 +14,8 @@ export function FooterComponent() {
               as={Link}
               to="/"
               src={`${process.env.REACT_APP_PUBLIC_URL}/images/Logo.webp`} 
-              alt="Organiquement Votre Sorigny Logo"
-              name="Organiquement Votre Sorigny"
+              alt="Taib-massages, spécialiste bien-être"
+              name="Taib-massages"
               className="flex items-center object-cover"
               theme={{
                 img: "h-32 w-32 rounded-full mr-3"

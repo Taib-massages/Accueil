@@ -37,7 +37,7 @@ jobs:
         env:
           REACT_APP_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
           CI: false
-          REACT_APP_PUBLIC_URL: https://damien-cuvillier.github.io/Taib-massages/
+          REACT_APP_PUBLIC_URL: https://Taib-massages.github.io/Accueil/
         run: |
           echo "Building with REACT_APP_PUBLIC_URL: $REACT_APP_PUBLIC_URL"
           npm run build

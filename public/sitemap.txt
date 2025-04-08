@@ -1,5 +1,5 @@
-https://damien-cuvillier.github.io/Taib-massages/
-https://damien-cuvillier.github.io/Taib-massages/prestations
-https://damien-cuvillier.github.io/Taib-massages/pilates
-https://damien-cuvillier.github.io/Taib-massages/cadeaux
-https://damien-cuvillier.github.io/Taib-massages/contact
+https://Taib-massages.github.io/Accueil/
+https://Taib-massages.github.io/Accueil/prestations
+https://Taib-massages.github.io/Accueil/pilates
+https://Taib-massages.github.io/Accueil/cadeaux
+https://Taib-massages.github.io/Accueil/contact

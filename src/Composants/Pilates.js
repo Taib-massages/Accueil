@@ -6,7 +6,7 @@ import SEO from './SEO/SEO';
   title="Cours de Pilates - Taib-massages"
   description="Cours de Pilates Mat à domicile à Paris 18e pour améliorer votre posture et votre bien-être"
   image="/images/Pilates-header.webp"
-  canonical="https://damien-cuvillier.github.io/Taib-massages/pilates"
+  canonical="https://Taib-massages.github.io/Accueil/pilates"
 />
 
 const Pilates = () => {
