@@ -6,7 +6,7 @@ const SEO = ({
   description = "Taib, masseur de bien-être spécialisé en massages, pierres chaudes, ventouses, réflexologie et cours de Pilates à Paris 18e. Réservez votre séance en ligne.", 
   image = "/images/og-image.png",
   type = "website",
-  url = "https://Taib-massages.github.io/Accueil/"
+  url = "https://taib-massages.github.io/Accueil/"
 }) => {
   return (
     <Helmet>

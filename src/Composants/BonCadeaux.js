@@ -6,7 +6,7 @@ import SEO from './SEO/SEO';
   title="Bons Cadeaux - Taib-massages"
   description="Offrez du bien-être avec nos bons cadeaux pour massages et cours de Pilates à Paris 18e"
   image="/images/taib-massage.webp"
-  canonical="https://Taib-massages.github.io/Accueil/cadeaux"
+  canonical="https://taib-massages.github.io/Accueil/cadeaux"
 />
 
 const BonCadeaux = () => {

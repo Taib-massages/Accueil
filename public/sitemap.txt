@@ -1,5 +1,5 @@
-https://Taib-massages.github.io/Accueil/
-https://Taib-massages.github.io/Accueil/prestations
-https://Taib-massages.github.io/Accueil/pilates
-https://Taib-massages.github.io/Accueil/cadeaux
-https://Taib-massages.github.io/Accueil/contact
+https://taib-massages.github.io/Accueil/
+https://taib-massages.github.io/Accueil/prestations
+https://taib-massages.github.io/Accueil/pilates
+https://taib-massages.github.io/Accueil/cadeaux
+https://taib-massages.github.io/Accueil/contact

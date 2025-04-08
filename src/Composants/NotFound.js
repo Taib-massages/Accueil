@@ -6,7 +6,7 @@ import SEO from './SEO/SEO';
   title="Page non trouvée - Taib-massages"
   description="La page que vous recherchez n'existe pas. Retournez à la page d'accueil ou contactez-nous."
   image="/images/og-image.png"
-  canonical="https://Taib-massages.github.io/Accueil/"
+  canonical="https://taib-massages.github.io/Accueil/"
 />
 
 const NotFound = () => {
