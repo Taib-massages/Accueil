@@ -10,6 +10,8 @@ import SEO from './SEO/SEO';
 />
 const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
 
+console.log('Clé API Web3Forms:', WEB3FORMS_KEY);
+
 const Contact = ({ showOnlyForm = false }) => {
     const location = useLocation();
     const prestation = location.state?.prestation || '';
