@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://taib-massages.github.io/Accueil/sitemap.xml
