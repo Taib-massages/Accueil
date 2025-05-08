@@ -88,7 +88,7 @@ const Contact = ({ showOnlyForm = false }) => {
 
     return (
         <>
-            <div className="bg-[#f6e6d1] relative min-h-screen mt-16">
+            <div className="bg-[#DCD6AE] relative min-h-screen mt-12">
                 <div 
                     className="fixed inset-0 w-full h-full pointer-events-none -z-10 opacity-100"
                     aria-hidden="true"
@@ -110,10 +110,10 @@ const Contact = ({ showOnlyForm = false }) => {
                             <div className={`${showOnlyForm ? '' : 'min-h-screen'} flex items-center justify-center px-4 sm:px-8`}>
                                 <div className="Form w-full max-w-2xl bg-white/50 rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-8 mx-auto">
                                     <div className="text-center mb-6 sm:mb-8">
-                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-[#5d795d] mb-3 sm:mb-4'>
+                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-3 sm:mb-4'>
                                             Contactez moi !
                                         </h2>
-                                        <p className='text-sm sm:text-base lg:text-lg text-gray-800 max-w-md mx-auto px-2'>
+                                        <p className='text-sm sm:text-base lg:text-lg text-start text-gray-800 max-w-md mx-auto px-2'>
                                             Vous avez une question ou avez besoin d'un renseignement ? <br></br>Vous voulez offrir un cadeau à un proche, ou tout simplement prendre soins de vous !<br></br>Remplissez le formulaire avec vos informations pour m'envoyer un mail, auquel je répondrai ensuite.
                                         </p>
                                     </div>
@@ -132,8 +132,8 @@ const Contact = ({ showOnlyForm = false }) => {
                                             className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-base sm:text-lg 
                                                       font-bold text-white transition duration-150 ease-in-out
                                                       ${isSubmitting 
-                                                        ? 'bg-[#80a880] cursor-not-allowed' 
-                                                        : 'bg-[#80a880] hover:bg-green-800 active:bg-green-800 hover:shadow-lg'
+                                                        ? 'bg-gray-900 cursor-not-allowed' 
+                                                        : 'bg-gray-900 hover:bg-black active:bg-black-800 hover:shadow-lg'
                                                       }`}
                                         >
                                             {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}

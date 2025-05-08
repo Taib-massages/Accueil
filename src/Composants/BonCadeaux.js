@@ -56,27 +56,49 @@ const BonCadeaux = () => {
   ];
 
   return (
-    <main className="bg-neutral-100 mt-12 mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="bg-neutral-100 mt-8 mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#5d795d] mb-4">Bons Cadeaux</h1>
+        <h1 className="text-4xl font-bold text-black mb-4">Bons Cadeaux</h1>
         <p className="text-xl text-gray-600">
           Offrez un moment de bien-être unique avec un bon cadeau Taib Massages
         </p>
       </section>
-
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold text-black mb-4">Comment ça marche ?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article className="text-center">
+            <div className="bg-neutral-100 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold mb-2 text-black">1. Choisissez</h3>
+              <p className="text-black">Sélectionnez le bon cadeau qui correspond à vos envies</p>
+            </div>
+          </article>
+          <article className="text-center">
+            <div className="bg-neutral-100 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold mb-2 text-black">2. Commandez</h3>
+              <p className="text-black">Passez votre commande en ligne en quelques clics</p>
+            </div>
+          </article>
+          <article className="text-center">
+            <div className="bg-neutral-100 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold mb-2 text-black">3. Offrez</h3>
+              <p className="text-black">Offrez un cadeau à votre proche pour un moment de bien-être unique</p>
+            </div>
+          </article>
+        </div>
+      </section>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {massages.map((massage) => (
           <article 
             key={massage.id}
-            className="bg-[#f6e6d1] p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="bg-[#DCD6AE] p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             aria-label={`Bon cadeau ${massage.title}`}
           >
             <div className="text-center mb-4">
-              <h3 className="text-xl font-bold text-[#5d795d]">{massage.title}</h3>
+              <h3 className="text-xl font-bold text-black">{massage.title}</h3>
               <p className="text-gray-600">Durée : {massage.duration}</p>
             </div>
             <div className="text-center mb-6">
-              <p className="text-2xl font-bold text-[#5d795d]">{massage.price}€</p>
+              <p className="text-2xl font-bold text-black">{massage.price}€</p>
             </div>
             <div className="text-center mb-4">
               <p className="text-gray-600">{massage.description}</p>
@@ -88,7 +110,7 @@ const BonCadeaux = () => {
                   prestation: massage.title,
                   cadeau: "C'est un cadeau" 
                 }}
-                className="inline-block bg-[#5d795d] text-white px-6 py-2 rounded-md hover:bg-[#7da37d] transition-colors"
+                className="inline-block bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-black transition-colors"
                 title={`Commander le bon cadeau ${massage.title}`}
               >
                 Commander
@@ -98,54 +120,32 @@ const BonCadeaux = () => {
         ))}
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-bold text-[#5d795d] mb-4">Comment ça marche ?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article className="text-center">
-            <div className="bg-[#5d795d] p-4 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2 text-gray-100">1. Choisissez</h3>
-              <p className="text-gray-100">Sélectionnez le bon cadeau qui correspond à vos envies</p>
-            </div>
-          </article>
-          <article className="text-center">
-            <div className="bg-[#5d795d] p-4 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2 text-gray-100">2. Commandez</h3>
-              <p className="text-gray-100">Passez votre commande en ligne en quelques clics</p>
-            </div>
-          </article>
-          <article className="text-center">
-            <div className="bg-[#5d795d] p-4 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2 text-gray-100">3. Offrez</h3>
-              <p className="text-gray-100">Offrez un cadeau à votre proche pour un moment de bien-être unique</p>
-            </div>
-          </article>
-        </div>
-      </section>
+      
 
       {/* Section avantages */}
       <section className="mt-12">
-        <h2 className="text-2xl font-bold text-[#5d795d] mb-4">Pourquoi choisir nos bons cadeaux ?</h2>
+        <h2 className="text-2xl font-bold text-black mb-4">Pourquoi choisir nos bons cadeaux ?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <article className="bg-[#f6e6d1] p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-[#5d795d] mb-4">Flexibilité</h3>
+          <article className="bg-neutral-100 p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-black mb-4">Flexibilité</h3>
             <p className="text-gray-600">
               Choisissez parmi une large gamme de prestations pour trouver le bon cadeau parfait
             </p>
           </article>
-          <article className="bg-[#f6e6d1] p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-[#5d795d] mb-4">Qualité</h3>
+          <article className="bg-neutral-100 p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-black mb-4">Qualité</h3>
             <p className="text-gray-600">
               Des prestations de qualité réalisées par un professionnel expérimenté
             </p>
           </article>
-          <article className="bg-[#f6e6d1] p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-[#5d795d] mb-4">Confort</h3>
+          <article className="bg-neutral-100 p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-black mb-4">Confort</h3>
             <p className="text-gray-600">
               Prestations à domicile pour plus de confort et de tranquillité
             </p>
           </article>
-          <article className="bg-[#f6e6d1] p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-[#5d795d] mb-4">Sécurité</h3>
+          <article className="bg-neutral-100 p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-black mb-4">Sécurité</h3>
             <p className="text-gray-600">
               Paiement sécurisé et service client réactif
             </p>
@@ -155,8 +155,8 @@ const BonCadeaux = () => {
 
       {/* Section contact */}
       <section className="mt-12">
-        <div className="bg-[#f6e6d1] p-6 rounded-lg shadow-lg">
-          <h3 className="text-2xl font-bold text-[#5d795d] mb-4">
+        <div className="bg-neutral-200 p-6 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-bold text-black mb-4">
             Questions ? Besoin d'aide ?
           </h3>
           <p className="text-gray-600 mb-4">
@@ -165,10 +165,10 @@ const BonCadeaux = () => {
           </p>
           <Link 
             to="/contact" 
-            className="inline-block mt-4 text-[#5d795d] font-bold hover:text-green-900"
+            className="inline-block mt-4 text-black font-bold hover:text-gray-800"
             title="Contactez-nous pour plus d'informations sur les bons cadeaux"
           >
-            Contactez-nous →
+            Contactez-moi →
           </Link>
         </div>
       </section>

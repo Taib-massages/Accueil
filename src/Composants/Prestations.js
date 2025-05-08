@@ -76,7 +76,7 @@ const Prestations = () => {
   return (
     <main className="min-h-screen bg-neutral-100">
       {/* Section bannière */}
-      <header className="relative h-[600px] w-full">
+      {/* <header className="relative h-[600px] w-full">
         <img 
           src={`${process.env.REACT_APP_PUBLIC_URL}/images/presta-banner.webp`}
           alt="Mes prestations de massage et Pilates à Paris 18e"
@@ -85,37 +85,37 @@ const Prestations = () => {
           width="1920"
           height="600"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gray-800 bg-opacity-30 flex items-center justify-center">
           <h1 className="text-4xl font-bold text-neutral-100 text-center relative top-40">
             Mes Prestations
           </h1>
         </div>
-      </header>
+      </header> */}
 
       {/* Sections des prestations */}
       {prestations.map((prestation, index) => (
-        <article key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <article key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 my-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Section texte */}
             <div className={`flex flex-col justify-center ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-              <h2 className="text-3xl font-bold text-[#5d795d] mb-4">{prestation.title}</h2>
-              <p className="text-gray-600 mb-4">{prestation.description}</p>
+              <h2 className="text-3xl font-bold text-black mb-4">{prestation.title}</h2>
+              <p className="text-gray-600 mb-4 text-justify">{prestation.description}</p>
               <div className="space-y-4">
                 {prestation.benefits.map((benefit, benefitIndex) => (
                   <p key={benefitIndex} className="text-gray-600">• {benefit}</p>
                 ))}
               </div>
-              <div className="mt-6 p-4 bg-[#f6e6d1] rounded-lg">
+              <div className="mt-6 p-4 bg-[#DCD6AE] rounded-lg">
             <div className="flex justify-between items-center">
-              <span className="text-xl font-semibold text-[#5d795d]">Durée : {prestation.duration}</span>
-              <span className="text-xl font-semibold text-[#5d795d]">Prix : {prestation.price}</span>
+              <span className="text-xl font-semibold text-black">Durée : {prestation.duration}</span>
+              <span className="text-xl font-semibold text-black">Prix : {prestation.price}</span>
             </div>
             </div>
             <div className="mt-4 text-center">
               <Link 
                 to="/contact" 
                 state={{ prestation: prestation.title }}
-                className="inline-flex items-center justify-center px-6 w-full py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#5d795d] hover:bg-[#4a654a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5d795d]"
+                className="inline-flex items-center justify-center px-6 w-full py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                 title={`Réserver une séance de ${prestation.title}`}
               >
                 Réserver maintenant

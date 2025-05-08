@@ -20,13 +20,13 @@ function Header() {
             <nav className="hidden md:block container mx-auto px-6 py-4">
                 <div className="flex items-center justify-center space-x-8">
                     {/* Logo sans soulignage */}
-                    <Link to="/" className="relative">
+                    {/* <Link to="/" className="relative">
                         <img 
                             src={`${process.env.REACT_APP_PUBLIC_URL}/images/logoheader.webp`} 
                             alt="Taib-massages" 
                             className="h-10 w-10 rounded-full object-cover hover:opacity-80 transition-opacity"
                         />
-                    </Link>
+                    </Link> */}
 
                     {/* Autres liens du menu avec soulignage */}
                     {menuItems.map((item) => (
