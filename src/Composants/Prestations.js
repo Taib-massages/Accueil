@@ -5,7 +5,6 @@ import SEO from './SEO/SEO';
 <SEO 
   title="Prestations - Taib-massages"
   description="Découvrez nos prestations de massage, réflexologie et cours de Pilates à Paris 18e"
-  image="/images/presta-banner.webp"
   canonical="https://taib-massages.github.io/Accueil/prestations"
 />
 
@@ -75,23 +74,6 @@ const Prestations = () => {
 
   return (
     <main className="min-h-screen bg-neutral-100">
-      {/* Section bannière */}
-      {/* <header className="relative h-[600px] w-full">
-        <img 
-          src={`${process.env.REACT_APP_PUBLIC_URL}/images/presta-banner.webp`}
-          alt="Mes prestations de massage et Pilates à Paris 18e"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          width="1920"
-          height="600"
-        />
-        <div className="absolute inset-0 bg-gray-800 bg-opacity-30 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-neutral-100 text-center relative top-40">
-            Mes Prestations
-          </h1>
-        </div>
-      </header> */}
-
       {/* Sections des prestations */}
       {prestations.map((prestation, index) => (
         <article key={index} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 my-8">
@@ -128,7 +110,7 @@ const Prestations = () => {
               <img 
                 src={`${process.env.REACT_APP_PUBLIC_URL}${prestation.image}`}
                 alt={`${prestation.title} - ${prestation.description}`}
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-lg h-[400px] object-cover shadow-lg"
                 loading="lazy"
                 width="600"
                 height="400"
