@@ -28,7 +28,7 @@ const Home = () => {
         </h1>
         <h2 className="text-xl text-center mb-1">
           Votre spécialiste Massage, Réflexologie et Pierres Chaudes et Ventouses sèches à Paris.
-          RDV à domicile ou Paris 18e.
+          <br></br>RDV à domicile ou Paris 18e.
         </h2>
         <p className=' text-center mb-1 font-semibold text-xl'>Prestations à domicile, possibilité d'utiliser un futon de massage</p>
         <h3 className="text-2xl text-center mb-1 text-black underline font-bold mt-16">

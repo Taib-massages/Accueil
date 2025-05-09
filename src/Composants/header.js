@@ -33,7 +33,7 @@ function Header() {
                         <Link 
                             key={item.path}
                             to={item.path} 
-                            className="relative text-gray-800 hover:text-[#5d795d] transition-colors"
+                            className="relative text-black hover:text-gray-600 transition-colors"
                         >
                             {item.label}
                             {location.pathname === item.path && (

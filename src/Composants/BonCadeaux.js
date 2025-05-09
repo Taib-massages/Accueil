@@ -56,14 +56,14 @@ const BonCadeaux = () => {
   ];
 
   return (
-    <main className="bg-neutral-100 mt-8 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main className="bg-neutral-100 mt-8 mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold text-black mb-4">Bons Cadeaux</h1>
         <p className="text-xl text-gray-600">
           Offrez un moment de bien-être unique avec un bon cadeau Taib Massages
         </p>
       </section>
-      <section className="mb-4">
+      <section className="mb-8">
         <h2 className="text-2xl font-bold text-black mb-4">Comment ça marche ?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <article className="text-center">
@@ -81,7 +81,7 @@ const BonCadeaux = () => {
           <article className="text-center">
             <div className="bg-neutral-100 p-4 rounded-lg">
               <h3 className="text-lg font-semibold mb-2 text-black">3. Offrez</h3>
-              <p className="text-black">Offrez un cadeau à votre proche pour un moment de bien-être unique</p>
+              <p className="text-black">Offrez un cadeau pour un moment de bien-être unique</p>
             </div>
           </article>
         </div>
